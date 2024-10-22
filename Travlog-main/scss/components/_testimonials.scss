@@ -1,0 +1,123 @@
+.testimonials {
+    position: relative;
+
+    &__vector {
+        width: 100% !important;
+        position: absolute;
+        top: -330px;
+        z-index: -1;
+
+        @include tablet() {
+            top: -150px;
+        }
+
+        @include phone() {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 56px;
+
+        & .left__btn {
+            background-color: white;
+        }
+
+        @include phone() {
+            gap: 64px;
+            flex-direction: column;
+
+            &>.left__btn,
+            &>.right__btn {
+                display: none;
+            }
+        }
+    }
+
+    &__btn {
+        display: none;
+
+        @include phone() {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & .left__btn,
+        & .right__btn {
+            min-width: 64px;
+            height: 64px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 56px;
+        text-align: center;
+
+        & .title {
+
+            @include phone() {
+                span {
+                    font-size: 16px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        &__img-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            @include textSpan($pColor);
+
+            & h3 {
+                font-size: 23px;
+                letter-spacing: normal;
+                text-transform: none;
+                
+                span {
+                    font-size: 28px;
+                    color: #FF5722;
+                }
+            }
+        }
+
+        &-stars {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        &>p {
+            @include textParagraph(23px);
+        }
+
+        &__control {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            & span {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: rgba(25, 24, 37, 0.05);
+            }
+
+            & span.active__control__span {
+                background-color: #F85E9F;
+            }
+        }
+    }
+}

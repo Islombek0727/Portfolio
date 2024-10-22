@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.conteiner {
+  max-width: 1227px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding: 29px 100px;
+}
+@media screen and (max-width: 754px) and (min-width: 0) {
+  .nav {
+    padding: 29px 20px;
+  }
+}
+.nav .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav .conteiner > a {
+  color: #000;
+  font-size: 32.8px;
+  font-weight: 600;
+}
+.nav .conteiner .menu .menu__item {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 1136px) and (min-width: 0) {
+  .nav .conteiner .menu .menu__item {
+    display: none;
+  }
+}
+.nav .conteiner .menu .menu__item a {
+  color: var(--gray3, rgba(64, 64, 64, 0.8));
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.32px;
+  transition: all 0.3s ease;
+}
+.nav .conteiner .menu .menu__item a:hover {
+  color: #000;
+}
+.nav .conteiner .login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav .conteiner .login .btn {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border: none;
+}
+.nav .conteiner .login .log__in {
+  padding: 8px 18px;
+  color: #09B451;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+@media screen and (max-width: 528px) and (min-width: 0) {
+  .nav .conteiner .login .log__in {
+    display: none;
+  }
+}
+.nav .conteiner .login .log__in:hover {
+  background-color: #09B451;
+  color: #fff;
+}
+.nav .conteiner .login .register {
+  padding: 12px 24px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: #09B451;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 528px) and (min-width: 0) {
+  .nav .conteiner .login .register {
+    display: none;
+  }
+}
+.nav .conteiner .login .register:hover {
+  color: #09B451;
+  background-color: #FFF;
+}
+
+#burger {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+@media screen and (max-width: 1136px) and (min-width: 0px) {
+  .burger {
+    display: block;
+  }
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.849);
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.content .menu {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .menu .menu__item {
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1136px) and (min-width: 0) {
+  .content .menu .menu__item {
+    display: flex;
+  }
+}
+.content .menu .menu__item a {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: var(--gray3, rgba(64, 64, 64, 0.8));
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.32px;
+  transition: all 0.3s ease;
+}
+.content .menu .menu__item a:hover {
+  color: #000;
+}
+
+#burger:checked + .content {
+  transform: translateX(0);
+}
+
+.quality .conteiner {
+  display: flex;
+  padding: 49px 0;
+  background-image: url(../assets/images/Frame\ 6558.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 1100px) and (min-width: 0) {
+  .quality .conteiner {
+    flex-direction: column;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .quality .conteiner {
+    align-items: center;
+  }
+}
+.quality .conteiner .education {
+  padding: 71px 50px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .quality .conteiner .education {
+    align-items: center;
+  }
+}
+.quality .conteiner .education h3 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .quality .conteiner .education h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .quality .conteiner .education h3 {
+    font-size: 32px;
+    max-width: 300px;
+  }
+}
+.quality .conteiner .education a {
+  padding: 20px 42px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  background-color: #09B451;
+  border-radius: 5px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  transition: all 0.3s ease;
+  border: 1px solid #09B451;
+}
+.quality .conteiner .education a:hover {
+  color: #09B451;
+  background-color: #FFF;
+}
+.quality .conteiner .bg__img {
+  width: 600px;
+  height: 500px;
+  background-image: url(../assets/images/Frame\ 6514.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 606px) and (min-width: 0) {
+  .quality .conteiner .bg__img {
+    display: none;
+  }
+}
+
+.opportunities {
+  padding: 84px 0;
+  margin: 0 20px 0 20px;
+}
+.opportunities .conteiner .links .links__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.opportunities .conteiner .links .links__item a {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px 17px;
+  border-radius: 5px;
+  background: #DFF;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.opportunities .conteiner .links .links__item a:hover {
+  background: rgb(173, 242, 242);
+}
+.opportunities .conteiner .links .links__item a span {
+  display: flex;
+  align-items: center;
+}
+
+.courses {
+  padding: 0 20px;
+}
+.courses .conteiner .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.courses .conteiner .title h3 {
+  color: var(--Gray-1, #333);
+  font-size: 32px;
+  font-weight: 600;
+}
+@media screen and (max-width: 700px) and (min-width: 0) {
+  .courses .conteiner .title h3 {
+    font-size: 16px;
+  }
+}
+.courses .conteiner .title a {
+  color: var(--Gray-1, #333);
+  font-size: 24px;
+  font-weight: 400;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.courses .conteiner .course__card {
+  display: flex;
+  gap: 32px;
+}
+@media screen and (max-width: 1250px) and (min-width: 0) {
+  .courses .conteiner .course__card {
+    overflow: scroll;
+  }
+}
+
+.popular {
+  margin-top: 100px;
+}
+
+.elem__2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.most {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #333333;
+}
+
+.star {
+  padding: 8px 16px;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: white;
+  background-color: #09B451;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+.star:hover {
+  border: 1px solid #09B451;
+  background-color: white;
+  color: #09B451;
+}
+.star:hover .strel12 {
+  display: none;
+}
+
+.boxs__elem {
+  margin-top: 66px;
+}
+
+.box {
+  width: 392px;
+  height: 405px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.2509803922);
+}
+
+.img__people {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.boxss {
+  padding: 24px;
+}
+
+.boxs__element6 {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.learn {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 250px;
+  color: #333333;
+}
+
+.elem__22 {
+  display: flex;
+  align-items: center;
+}
+
+.star__2 {
+  display: flex;
+  gap: 3px;
+}
+
+.elem__33 {
+  margin-top: 42px;
+  display: flex;
+  gap: 16px;
+}
+
+.week {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+}
+
+.student {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+}
+
+.money {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #09B451;
+  margin-left: 66px;
+}
+
+.sec2 {
+  margin-top: 100px;
+}
+
+.learn2 {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #333333;
+}
+
+.boxs__element62 {
+  display: flex;
+  gap: 32px;
+  overflow: scroll;
+}/*# sourceMappingURL=main.css.map */

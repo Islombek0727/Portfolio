@@ -1,0 +1,119 @@
+.right__btn {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #5D50C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left__btn {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 1px solid rgba(25, 24, 37, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination {
+    padding: 64px 0;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+
+        @include tablet() {
+            flex-direction: column;
+        }
+        @include phone() {
+            flex-direction: column;
+        }
+
+        &__btn {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            gap: 32px;
+
+            @include tablet() {
+                margin-top: 64px;
+                justify-content: center;
+            }
+
+            @include phone() {
+                margin-top: 32px;
+                justify-content: space-between;
+
+                & .left__btn, & .right__btn {
+                    min-width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+        gap: 32px;
+        list-style: none;
+
+        @include phone() {
+            flex-direction: column;
+        }
+
+        &-item {
+            max-width: 373px;
+            border-radius: 32px;
+            background: #FFF;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 32px 71px 0px rgba(0, 0, 0, 0.05), 0px 128px 128px 0px rgba(0, 0, 0, 0.04), 0px 288px 173px 0px rgba(0, 0, 0, 0.03), 0px 513px 205px 0px rgba(0, 0, 0, 0.01), 0px 801px 224px 0px rgba(0, 0, 0, 0.00);
+
+            @include tablet() {
+                max-width: 278px;
+            }
+
+            & img {
+                width: 100%;
+            }
+
+            & .item__info {
+                padding: 24px;
+
+                &>div {
+                    display: flex;
+
+                    & h3 {
+                        @include heading($TitleColor, 23px);
+                        margin-bottom: 16px;
+                    }
+
+                    & span {
+                        @include textSpan($spanTextColor, 23px) {
+                            letter-spacing: normal;
+                        }
+                    }
+                }
+
+                &>p {
+                    @include textParagraph;
+                    margin-bottom: 32px;
+                }
+
+                &>span {
+                    @include textSpan(#FF5722);
+                    background-image: url('../images/star__icon.svg');
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    padding-right: 23px;
+                }
+            }
+        }
+    }
+}

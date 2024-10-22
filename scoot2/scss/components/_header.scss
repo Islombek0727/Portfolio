@@ -1,0 +1,136 @@
+.container {
+    max-width: 1106px;
+    margin: 0 auto;
+    padding: 42px 70px;
+}
+
+.navbar__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__elements {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.list-item a {
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #939CAA;
+    text-decoration: none;
+
+}
+
+.btn1 {
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    background-color: #FCB72B;
+    border: none;
+    padding: 14px 39px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #d8b673;
+    }
+}
+
+#check {
+    display: none;
+
+}
+
+.menu__btn {
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .str__small {
+        display: none;
+    }
+
+    .str__big {
+        position: absolute;
+        left: 0;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .takes {
+        margin-top: 24px;
+    }
+
+    .btn2 {
+        margin-top: 32px;
+    }
+
+    .str__big {
+        position: absolute;
+        left: -160px;
+    }
+
+    .simple {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .list-item a {
+        color: white;
+    }
+
+    .nav__list {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        background: linear-gradient(135deg, orange 60%, cyan);
+        width: 40%;
+        height: 60vh;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-in;
+    }
+
+    .logo__img {
+        z-index: 9999;
+    }
+
+    #check:checked + .nav__list{
+        transform: translateX(0);
+    }
+
+    .btn1 {
+        display: none;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+    .logo__img {
+        width: 75px;
+    }
+
+ 
+}

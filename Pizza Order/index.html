@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Menu Exam</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <main class="menu">
+      <div class="pizzaMenu">
+        <h2 class="orderPiz">Pizza order</h2>
+
+        <form action="">
+          <input type="text" id="username" placeholder="User name" />
+          <input type="tel" id="phoneNumber" placeholder="Phone number" />
+          <input type="text" id="address" placeholder="User Adress" />
+
+          <label for="dough">
+            <h3>Dough thickness</h3>
+            <select id="dough">
+              <option value="">none</option>
+              <option value="thin">Thin</option>
+              <option value="medium">Medium</option>
+              <option value="thick">Thick</option>
+            </select>
+          </label>
+          <br>
+          <!-- Pizza input radio -->
+          <div class="pizza_size">
+            <h3>Size:</h3>
+            <input type="radio" name="size" id="size-25" value="size25" checked/>
+            <label for="size-25">
+              25sm
+            </label>
+
+            <input type="radio" name="size" id="size-30" value="size30"/>
+            <label for="size-30">
+              30sm
+            </label>
+
+            <input type="radio" name="size" id="size-35" value="size35"/>
+            <label for="size-35">
+              35sm
+            </label>
+          </div>
+          <!-- End of Pizza input radio -->
+
+          <!--Pizza input checkbox -->
+          <h3>On Pizza:</h3>
+          <div class="on_pizza">
+            <label for="tomato">
+              <input type="checkbox" id="tomato" value="Tomato" />
+              Tomato
+            </label>
+            <label for="turkeyMeat">
+              <input type="checkbox" id="turkeyMeat" value="Turkey meat" />
+              Turkey meat
+            </label>
+            <label for="olive">
+              <input type="checkbox" id="olive" value="Olive" />
+              Olive
+            </label>
+            <label for="picedCucumber">
+              <input
+                type="checkbox"
+                id="picedCucumber"
+                value="Piced Cucumber"
+              />
+              Piced Cucumber
+            </label>
+            <label for="mushroom">
+              <input type="checkbox" id="mushroom" value="Mushroom" />
+              Mushroom
+            </label>
+            <label for="horseMeat">
+              <input type="checkbox" id="horseMeat" value="Horse meat" />
+              Horse meat
+            </label>
+          </div>
+          <!-- End of Pizza input checkbox -->
+
+          <!--Pizza input checkbox -->
+          <h3>Add:</h3>
+          <div class="add_pizza">
+            <label for="pepper">
+              <input type="checkbox" id="pepper" value="pepper" />
+              Pepper
+            </label>
+            <label for="sausage">
+              <input type="checkbox" id="sausage" value="sausage" />
+              Sausage
+            </label>
+          </div>
+          <!-- End of Pizza input checkbox -->
+
+          <button type="button" id="formBtn" onclick="userOrder(check)">
+            Save
+          </button>
+        </form>
+      </div>
+
+      <section class="orderBtn">
+        <div class="order"></div>
+      </section>
+      
+      <div class="card__price1">
+      <p>Thin- $10</p>
+      <p>Medium- $12</p>
+      <p>Trick- $15</p>
+      <div class="size__price1">
+        <div class="sz">
+          <h4>Size:</h4>
+        </div>
+        <div class="pri25">
+          <p>25sm- $10</p>
+        <p>30sm- $12</p>
+        <p>35sm- $15</p>
+        </div>
+      </div>
+      
+      <div class="on__pizza1">
+        <div class="onpiz">
+        <h4>On Pizza</h4>
+        </div>
+        <p>every-$5</p>
+      </div>
+
+      <div class="addpriceget1">
+        <div class="getpr">
+            <h4>Add:</h4>
+        </div>
+        <p>every-$3</p>
+      </div>
+
+
+    </div>
+
+    
+  </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+.quality{
+
+  .conteiner{
+    display: flex;
+    padding: 49px 0;
+    background-image: url(../assets/images/Frame\ 6558.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media(1100px, 0){
+      flex-direction: column;
+      background-size: cover;
+    }
+    @include media(1100px, 768px){
+      align-items: center;
+    }
+
+    .education{
+      padding: 71px 50px;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      @include media(1100px, 768px){
+        align-items: center;
+      }
+      
+      h3{
+        color: #000;
+        font-size: 60px;
+        font-weight: 700;
+        @include media(1100px, 768px){
+          text-align: center;
+        }
+        @include mobile(){
+          font-size: 32px;
+          max-width: 300px;
+        }
+      }
+      a{
+        padding: 20px 42px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        background-color: #09B451;
+        border-radius: 5px;
+        max-width: max-content;
+        transition: all .3s ease;
+        border: 1px solid #09B451;
+        &:hover{
+          color: #09B451;
+          background-color: #FFF;
+        }
+      }
+    }
+    .bg__img{
+     width: 600px;
+     height: 500px;
+      background-image: url(../assets/images/Frame\ 6514.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include media(606px, 0){
+        display: none;
+      }
+    }
+  }
+}

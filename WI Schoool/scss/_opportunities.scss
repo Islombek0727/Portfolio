@@ -1,0 +1,37 @@
+.opportunities{
+  padding: 84px 0;
+  margin: 0 20px 0 20px;
+
+  .conteiner{
+
+    .links{
+
+      .links__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 48px;
+        a{
+          gap: 12px;
+          display: flex;
+          align-items: center;
+          padding:10px 17px;
+          border-radius: 5px;
+          background: #DFF;
+          color: #000;
+          font-size: 16px;
+          font-weight: 400;
+          transition: all .3s ease;
+          &:hover{
+            background: rgb(173, 242, 242);
+          }
+          span{
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

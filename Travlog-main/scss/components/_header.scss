@@ -1,0 +1,177 @@
+.navbar {
+    margin: 32px 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        gap: 64px;
+        list-style: none;
+
+        &-item {
+            & a {
+                @include textParagraph(14px) {
+                    text-decoration: none;
+                    font-weight: 700;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover {
+                    color: $btnDarkColor;
+                }
+            }
+
+            & .active {
+                color: $btnDarkColor;
+            }
+        }
+
+        & .btn__item {
+            display: none;
+        }
+    }
+
+    #HamburBtn {
+        position: absolute;
+        visibility: hidden;
+        display: none;
+    }
+
+    &__label {
+        display: none;
+        z-index: 1001;
+    }
+
+    @include tablet() {
+        &__wrapper {
+            flex-direction: row-reverse;
+        }
+
+        &__list {
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 150px;
+            background-color: black;
+            width: 40%;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: all 0.4s ease-in;
+
+            &-item {
+                border-bottom: 1px solid $btnLightColor;
+                & a {
+                    @include textParagraph() {
+                        color: $btnLightColor;
+                    }
+
+                    &:hover {
+                        color: $btnLightColor;
+                    }
+                }
+
+                & .active {
+                    color: $btnLightColor;
+                }
+            }
+        }
+
+        #HamburBtn {
+            display: block;
+        }
+
+        #HamburBtn:checked + &__list {
+            transform: translateX(0);
+        }
+
+        &__label {
+            display: block;
+        }
+
+        & .btn {
+            order: -1;
+        }
+    }
+
+    @include phone() {
+
+        &__list {
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: all 0.4s ease-in;
+
+            &-item {
+                border-bottom: 1px solid $btnLightColor;
+                & a {
+                    @include textParagraph() {
+                        color: $btnLightColor;
+                    }
+
+                    &:hover {
+                        color: $btnLightColor;
+                    }
+                }
+
+                & .active {
+                    color: $btnLightColor;
+                }
+            }
+
+            & .btn__item {
+                display: block;
+
+                & a {
+                    padding: 15px 50px;
+                }
+            }
+        }
+
+        & .btn {
+            display: none;
+        }
+
+        #HamburBtn {
+            display: block;
+        }
+
+        #HamburBtn:checked + &__list {
+            transform: translateX(0);
+        }
+
+        &__label {
+            display: block;
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__primary {
+        @include btn();
+        text-decoration: none;
+    }
+
+    &__secondary {
+        @include btn($btnSecondaryColor, $btnLightColor);
+        text-decoration: none;
+    }
+}

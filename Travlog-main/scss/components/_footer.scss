@@ -1,0 +1,71 @@
+.footer {
+    padding: 64px 0;
+
+    &__wrapper {
+        display: flex;
+        gap: 64px;
+
+        @include tablet() {
+            flex-direction: column;
+        }
+        @include phone() {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 560px;
+        @include tablet() {
+            max-width: 100%;
+        }
+        @include phone() {
+            max-width: 100%;
+        }
+
+        &>p {
+            color: $pColor;
+            font-size: 23px;
+            font-weight: 450;
+            line-height: 160%;
+        }
+
+        & ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 32px;
+
+        @include tablet() {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @include phone() {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        & ul {
+            min-width: 165px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            & li:first-child {
+                @include heading($TitleColor, 23px);
+            }
+
+            & li:not(:first-child) {
+                @include textParagraph;
+            }
+        }
+    }
+}

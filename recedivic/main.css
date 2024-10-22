@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 17px 60px;
+    margin: 0 auto;
+}
+/*!  Header  */
+
+
+header {
+    background-color: #0E191B;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav__item {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.nav__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 152px;
+}
+
+img {
+    width: auto;
+    max-width: 100px;
+}
+
+#check {
+    display: none;
+}
+
+.navbar__icon {
+    display: none;
+}
+
+
+@media screen  and (max-width: 1024px) {
+    .com__start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lines {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar__menu {
+        display: none;
+
+    }
+    
+    .navbar__icon {
+        display: block;
+    }
+
+    .menu__col {
+        width: 20px;
+        color: white;
+        background-color: white;
+    }
+
+    .navbar__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 300px;
+        height: 460px;
+        background-color: #2D2E46;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+        padding: 50px 10px;
+        border-radius: 58% 42% 100% 0% / 0% 98% 2% 100%   ;
+    }
+
+    .nav__item a  {
+        color: white;
+    }
+
+    .navbar__icon {
+        display: block;
+    }
+
+    #check:checked ~ .navbar__menu {
+        transform: translateX(0%);
+        cursor: pointer;
+    }
+    
+    .navbar {
+       display: flex;
+       justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*!  Header  end of */
+
+
+
+/*?  community start  */
+
+.community {
+    background-image: url(./images//women.png);
+    width: 100%;
+    height: 776px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    max-width: 540px;
+    font-family: "Libre Baskerville";
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #fff;
+    margin-top: 152px;
+
+}
+
+.small__info {
+    font-family: "Public Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 520px;
+    margin-top: 29px;
+}
+
+.work__btn {
+    border: 1px solid #FFFFFF4D;
+    max-width: 208px;
+    height: 54px;
+    color: white;    
+    border-radius: 80px;
+    background-color: #0E191B;
+    padding: 17px 33px;
+    margin-top: 29px;
+    cursor: pointer;
+    
+}
+
+.work__btn:hover {
+    background-color: white;
+    color: #0E191B;
+
+}
+
+.fill {
+    margin-top: 108px;
+}
+
+.fil__line {
+    width: 153.31px;
+    height: 1px;
+    background-color: #FFFFFF4D;
+}
+
+.fill__start {
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.lines {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/*?  community end of  */
+
+
+/** start profit */
+
+
+.profit__info {
+    font-family: "Libre Baskerville";
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 660px;
+    margin: 0 auto;
+    color: #003331;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.stept__info {
+    display: flex;
+    align-items: center;
+    gap: 117px;
+    margin-top: 59px;
+}
+
+.round {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: #014C48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.round__tag {
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.stept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 111px;
+    gap: 19px;
+}
+
+
+.fil__line2 {
+    width: 153.31px;
+    height: 1px;
+    background-color: #35536233;
+}
+
+
+/** end of profit */
+
+
+/*! start defenition  */
+
+.defenition {
+    height: 409px;
+    background-color: #F7F8F8;
+    margin-top: 141px;
+}
+
+.def__head {
+    display: flex;
+    align-items: center;
+    gap: 127px;
+    padding: 80px 60px 84px 60px;
+}
+
+.human__def {
+    font-family:" Public Sans ";
+    font-size: 22px;
+    font-weight: 400;
+    color: #003331;
+}
+
+.system__def {
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 429px;
+    color: #355362CC;
+}
+
+.img__def {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info__def {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.human__img {
+    width: 100%;
+    max-width: none;
+    min-height: none;
+    width: 220px;
+    height: 249px;
+    border: 5px;
+}
+
+.grandfather__img {
+    width: 100%;
+    max-width: none;
+    min-height: none;
+    width: 296px;
+    height: 249px;
+    border: 5px;
+}
+
+.work__btn2 {
+    border: 1px solid #35536233;
+    max-width: 208px;
+    height: 54px;
+    color: #00413E;    
+    border-radius: 80px;
+    background-color: white;
+    padding: 17px 33px;
+    margin-top: 29px;
+    cursor: pointer;
+    
+}
+
+.work__btn2:hover {
+    background-color: #0E191B;
+    color: white;
+
+}
+/*! end of defenition  */
+
+
+
+/*? forest__info */
+
+.for__info {
+    display: flex;
+    align-items: center;
+    gap: 83px;
+}
+
+.forest__info {
+    background-color: black;
+}
+
+.criminal__info {
+    max-width: 542px;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+.est__info {
+    font-family:" Public Sans";
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+.forest__tags {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.lay1 {
+    width: 100%;
+    max-width: none;
+    min-height: none;
+    width: 247px;
+    height: 680px;
+}
+
+/*? end of forest__info */
+
+
+/** partners start */
+.partners {
+    background-color: #F4F5F5;
+}
+
+.info__part {
+    display: flex;
+    align-items: center;
+}
+
+.part__img {
+    width: 100%;
+    max-width: none;
+    min-height: none;
+    width: 160px;
+    height: 67px;
+    border: 3px;
+}
+
+.part__tag {
+    font-family: "Public Sans";
+    font-size: 11px;
+    font-weight: 400;
+    color: #35536299;
+}
+
+.static__img {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    width: 1200px;
+    height: 732px;
+    margin-top: 140px;
+}
+/** end od partners */
+
+
+/*? start recedeviz **/
+
+.recidiviz {
+    background-color: #001F1F;
+    height: 608px;
+}
+
+.recidiviz__head {
+    display: flex;
+    align-items: center;
+}
+
+.rec__tags {
+    margin-top: 147px;
+
+}
+
+.work__rec {
+    font-family: "Libre Baskerville";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 52px;
+    color: white;
+
+}
+
+.data__rec {
+    max-width: 320px;
+    font-family: "Public Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+    margin-top: 43px;
+
+}
+
+.rec__btn {
+    width: 143px;
+    height: 52px;
+    border-radius: 80px;
+    background-color: #00665F;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 37px;
+}
+
+.rec__btn:hover {
+    background-color: #2c9690;
+}
+
+.a__map {
+    width: 100%;
+    width: 431px;
+    height: 320px;  
+    max-width: none;
+    min-height: none;
+    margin-left: 230px;
+    margin-top: 147px;
+
+}
+
+/*? end of recedeviz **/
+
+
+/** start footer **/
+footer {
+    background-color: #001414;
+    height: 553px;
+
+}
+
+.footer__head {
+    display: flex;
+    align-items: center;
+    gap: 103px;
+}
+
+.ikki {
+    margin-left: 458px;
+    margin-bottom: 170px;
+}
+
+.footer__rank {
+    margin-top: 112px;
+}
+
+.footer__tags1 {
+    font-family: "Public Sans";
+    font-size: 11px;
+    font-weight: 400;
+    color: #7D9798;
+}
+
+.foot__line {
+    width: 16px;
+    height: 1px;
+    background-color: #25B895;
+    margin-top: 24px;
+}
+
+.footer__tags {
+    font-family:" Public Sans";
+    font-size: 15px;
+    font-weight: 400;
+    color: #EDECEB;
+    margin-top: 23px;
+}
+
+.img__tag {
+    display: flex; 
+    align-items: center;
+
+}
+
+/** end of footer **/ 

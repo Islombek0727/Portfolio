@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar__wrapper">
+            <a href="/" class="navbar__logo">
+                <img src="./images/logo.svg" alt="logo">
+            </a>
+
+            <input type="checkbox" id="HamburBtn">
+
+            <ul class="navbar__list">
+                <li class="navbar__list-item">
+                    <a href="/" class="active">Home</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">Discover</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">Special Deals</a>
+                </li>
+                <li class="navbar__list-item">
+                    <a href="/">Contact</a>
+                </li>
+
+                <li class="btn__item">
+                    <a href="/" class="btn__primary">Log In</a>
+                </li>
+
+                <li class="btn__item">
+                    <a href="/" class="btn__secondary">Sign Up</a>
+                </li>
+            </ul>
+
+            <div class="btn">
+                <a href="/" class="btn__primary">Log In</a>
+                <a href="/" class="btn__secondary">Sign Up</a>
+            </div>
+
+            <label for="HamburBtn" class="navbar__label">
+                <img src="./images/TriggerLogo.svg" alt="Trigger">
+            </label>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container hero__wrapper">
+                <div class="hero__content">
+                    <div class="hero__info">
+                        <button class="hero__info-btn">Explore the world!</button>
+
+                        <h2>
+                            Travel <span>top destination</span>
+                            of the world
+                        </h2>
+
+                        <p>
+                            We always make our customer happy by providing
+                            as many choices as possible
+                        </p>
+
+                        <div class="btn">
+                            <a href="/" class="btn__primary">Watch Demo</a>
+                            <a href="/" class="btn__secondary">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="hero__image">
+                        <div>
+                            <div class="image1">
+                                <span>
+                                    <img src="./images/send__icon.svg" alt="send__icon">
+                                </span>
+                            </div>
+                            <div class="image2">
+                                <span>
+                                    <img src="./images/add-user__icon.svg" alt="add-user__icon">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="image3">
+                            <span class="btn__primary">
+                                <img src="./images/location__icon.svg" alt="add-user__icon">
+                                Top Places
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__comp">
+                    <!-- <div class="comp__blur__effct"></div> -->
+                    <img src="./images/comp__logo1.svg" alt="comp__logo">
+                    <img src="./images/comp__logo2.svg" alt="comp__logo">
+                    <img src="./images/comp__logo3.svg" alt="comp__logo">
+                    <img src="./images/comp__logo4.svg" alt="comp__logo">
+                    <img src="./images/comp__logo5.svg" alt="comp__logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container services__wrapper">
+                <div class="title">
+                    <span>Services</span>
+                    <h2>Our top value categories for you</h2>
+                </div>
+
+                <ul class="services__card-list">
+                    <li class="services__card-list-item">
+                        <img src="./images/services__card__image1.svg" alt="services__card__image">
+
+                        <div>
+                            <h3>Best Tour Guide</h3>
+                            <p>What looked like a small patch of purple grass, above five feet.</p>
+                        </div>
+                    </li>
+                    <li class="services__card-list-item">
+                        <img src="./images/services__card__image2.svg" alt="services__card__image">
+
+                        <div>
+                            <h3>Easy Booking</h3>
+                            <p>What looked like a small patch of purple grass, above five feet.</p>
+                        </div>
+                    </li>
+                    <li class="services__card-list-item">
+                        <img src="./images/services__card__image3.svg" alt="services__card__image">
+
+                        <div>
+                            <h3>Weather Forecast</h3>
+                            <p>What looked like a small patch of purple grass, above five feet.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="destination">
+            <div class="container destination__wrapper">
+                <div class="destination__title">
+                    <div class="title">
+                        <span>Top Destination</span>
+                        <h2>Explore top destination</h2>
+                    </div>
+
+                    <div class="destination__title__btn">
+                        <div class="left__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M6.41431 11.0005H20.0001C20.5524 11.0005 21.0001 11.4482 21.0001 12.0005C21.0001 12.5528 20.5524 13.0005 20.0001 13.0005H6.41431L9.65695 16.2432C10.0475 16.6337 10.0475 17.2669 9.65695 17.6574C9.26642 18.0479 8.63326 18.0479 8.24273 17.6574L4.00009 13.4147C3.21904 12.6337 3.21904 11.3674 4.00009 10.5863L8.24273 6.34367C8.63326 5.95315 9.26642 5.95315 9.65695 6.34367C10.0475 6.7342 10.0475 7.36736 9.65695 7.75789L6.41431 11.0005Z"
+                                    fill="#191825" />
+                            </svg>
+                        </div>
+
+                        <div class="right__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M17.5857 11.0005H3.99991C3.44762 11.0005 2.99991 11.4482 2.99991 12.0005C2.99991 12.5528 3.44762 13.0005 3.99991 13.0005H17.5857L14.3431 16.2432C13.9525 16.6337 13.9525 17.2669 14.3431 17.6574C14.7336 18.0479 15.3667 18.0479 15.7573 17.6574L19.9999 13.4147C20.781 12.6337 20.781 11.3674 19.9999 10.5863L15.7573 6.34367C15.3667 5.95315 14.7336 5.95315 14.3431 6.34367C13.9525 6.7342 13.9525 7.36736 14.3431 7.75789L17.5857 11.0005Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="destination__list">
+                    <li class="destination__list-item">
+                        <img src="./images/destination__image1.png" alt="destination__image">
+
+                        <div class="item__info">
+                            <div>
+                                <h3>Paradise Beach, Bantayan Island</h3>
+                                <span>$550.16</span>
+                            </div>
+
+                            <p>Rome, Italy</p>
+
+                            <span>4.8</span>
+                        </div>
+                    </li>
+                    <li class="destination__list-item">
+                        <img src="./images/destination__image2.png" alt="destination__image">
+
+                        <div class="item__info">
+                            <div>
+                                <h3>Ocean with full of Colors</h3>
+                                <span>$20.99</span>
+                            </div>
+
+                            <p>Maldives</p>
+
+                            <span>4.5</span>
+                        </div>
+                    </li>
+                    <li class="destination__list-item">
+                        <img src="./images/destination__image3.png" alt="destination__image">
+
+                        <div class="item__info">
+                            <div>
+                                <h3>Mountain View, Above the cloud</h3>
+                                <span>$150.99</span>
+                            </div>
+
+                            <p>United Arab Emeries </p>
+
+                            <span>5.0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container features__wrapper">
+                <div class="features__image"></div>
+                <div class="features__info">
+                    <div class="title">
+                        <span>Travel Point</span>
+                        <h2>We helping you find your dream location</h2>
+
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical Latin literature from 45 BC.
+                        </p>
+                    </div>
+
+                    <ul class="features__info__list">
+                        <li class="features__info__list-item">
+                            <h2>500+</h2>
+                            <p>Holiday Package</p>
+                        </li>
+                        <li class="features__info__list-item">
+                            <h2>100</h2>
+                            <p>Luxury Hotel</p>
+                        </li>
+                        <li class="features__info__list-item">
+                            <h2>7</h2>
+                            <p>Premium Airlines</p>
+                        </li>
+                        <li class="features__info__list-item">
+                            <h2>2k+</h2>
+                            <p>Happy Customer</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="features features__reverse">
+            <div class="container features__wrapper">
+                <div class="features__info">
+                    <div class="title">
+                        <span>Key features</span>
+                        <h2>We offer best services</h2>
+
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical Latin literature
+                            from 45 BC.
+                        </p>
+                    </div>
+
+                    <ul class="features__info__list list__reverse">
+                        <li class="features__info__list-item">
+                            <div>
+                                <img src="./images/location__features__icon.svg" alt="location__features__icon">
+                            </div>
+                            <div>
+                                <h2>We offer best services</h2>
+                                <p>Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </li>
+                        <li class="features__info__list-item">
+                            <div>
+                                <img src="./images/calendar__features__icon.svg" alt="calendar__features__icon">
+                            </div>
+                            <div>
+                                <h2>Schedule your trip</h2>
+                                <p>It has roots in a piece of classical</p>
+                            </div>
+                        </li>
+                        <li class="features__info__list-item">
+                            <div>
+                                <img src="./images/ticket__features__icon.svg" alt="ticket__features__icon">
+                            </div>
+                            <div>
+                                <h2>Get discounted coupons</h2>
+                                <p>Lorem Ipsum is not simply random text</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features__image fea__image-2"></div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <img src="./images/testimonials__vector.svg" alt="" class="testimonials__vector">
+            <div class="container testimonials__wrapper">
+                <div class="left__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M6.41431 11.0005H20.0001C20.5524 11.0005 21.0001 11.4482 21.0001 12.0005C21.0001 12.5528 20.5524 13.0005 20.0001 13.0005H6.41431L9.65695 16.2432C10.0475 16.6337 10.0475 17.2669 9.65695 17.6574C9.26642 18.0479 8.63326 18.0479 8.24273 17.6574L4.00009 13.4147C3.21904 12.6337 3.21904 11.3674 4.00009 10.5863L8.24273 6.34367C8.63326 5.95315 9.26642 5.95315 9.65695 6.34367C10.0475 6.7342 10.0475 7.36736 9.65695 7.75789L6.41431 11.0005Z"
+                            fill="#191825" />
+                    </svg>
+                </div>
+
+                <div class="testimonials__info">
+                    <div class="title">
+                        <span>Testimonials</span>
+                        <h2>Trust our clients</h2>
+                    </div>
+
+                    <img src="./images/testimonials__image.png" alt="testimonials__image">
+
+                    <div class="testimonials__info__img-title">
+                        <h3>
+                            <span>Mark Smith </span>
+                            / Travel Enthusiast
+                        </h3>
+
+                        <div class="testimonials__info-stars">
+                            <img src="./images/star__icon.svg" alt="star__icon">
+                            <img src="./images/star__icon.svg" alt="star__icon">
+                            <img src="./images/star__icon.svg" alt="star__icon">
+                            <img src="./images/star__icon.svg" alt="star__icon">
+                            <img src="./images/star__icon.svg" alt="star__icon">
+                        </div>
+                    </div>
+
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                        in a piece of classical Latin literature from 45 BC.
+                    </p>
+
+                    <div class="testimonials__info__control">
+                        <span></span>
+                        <span class="active__control__span"></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <div class="right__btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M17.5857 11.0005H3.99991C3.44762 11.0005 2.99991 11.4482 2.99991 12.0005C2.99991 12.5528 3.44762 13.0005 3.99991 13.0005H17.5857L14.3431 16.2432C13.9525 16.6337 13.9525 17.2669 14.3431 17.6574C14.7336 18.0479 15.3667 18.0479 15.7573 17.6574L19.9999 13.4147C20.781 12.6337 20.781 11.3674 19.9999 10.5863L15.7573 6.34367C15.3667 5.95315 14.7336 5.95315 14.3431 6.34367C13.9525 6.7342 13.9525 7.36736 14.3431 7.75789L17.5857 11.0005Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+                <div class="testimonials__btn">
+                    <div class="left__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M6.41431 11.0005H20.0001C20.5524 11.0005 21.0001 11.4482 21.0001 12.0005C21.0001 12.5528 20.5524 13.0005 20.0001 13.0005H6.41431L9.65695 16.2432C10.0475 16.6337 10.0475 17.2669 9.65695 17.6574C9.26642 18.0479 8.63326 18.0479 8.24273 17.6574L4.00009 13.4147C3.21904 12.6337 3.21904 11.3674 4.00009 10.5863L8.24273 6.34367C8.63326 5.95315 9.26642 5.95315 9.65695 6.34367C10.0475 6.7342 10.0475 7.36736 9.65695 7.75789L6.41431 11.0005Z"
+                                fill="#191825" />
+                        </svg>
+                    </div>
+
+                    <div class="right__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M17.5857 11.0005H3.99991C3.44762 11.0005 2.99991 11.4482 2.99991 12.0005C2.99991 12.5528 3.44762 13.0005 3.99991 13.0005H17.5857L14.3431 16.2432C13.9525 16.6337 13.9525 17.2669 14.3431 17.6574C14.7336 18.0479 15.3667 18.0479 15.7573 17.6574L19.9999 13.4147C20.781 12.6337 20.781 11.3674 19.9999 10.5863L15.7573 6.34367C15.3667 5.95315 14.7336 5.95315 14.3431 6.34367C13.9525 6.7342 13.9525 7.36736 14.3431 7.75789L17.5857 11.0005Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container subscribe__wrapper">
+                <div class="title">
+                    <span>subscribe to our newsletter</span>
+                    <h2>Prepare yourself & let’s explore the beauty of the world</h2>
+                </div>
+
+                <form action="">
+                    <input type="email" required placeholder="&#9993; Your email">
+                    <button class="subscribe__btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__info">
+                    <a href="/">
+                        <img src="./images/logo.svg" alt="logo">
+                    </a>
+
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="/"><img src="./images/facebook__icon.svg" alt="facebook__icon"></a>
+                        </li>
+                        <li>
+                            <a href="/"><img src="./images/twitter__icon.svg" alt="twitter__icon"></a>
+                        </li>
+                        <li>
+                            <a href="/"><img src="./images/instagram__icon.svg" alt="instagram__icon"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <ul>
+                        <li>
+                            Company
+                        </li>
+                        <li>
+                            <a href="/">About</a>
+                        </li>
+                        <li>
+                            <a href="/">Career</a>
+                        </li>
+                        <li>
+                            <a href="/">Mobile</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            Contact
+                        </li>
+                        <li>
+                            <a href="/">Why Travlog?</a>
+                        </li>
+                        <li>
+                            <a href="/">Partner with us</a>
+                        </li>
+                        <li>
+                            <a href="/">FAQ’s</a>
+                        </li>
+                        <li>
+                            <a href="/">Blog</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            Meet Us
+                        </li>
+                        <li>
+                            <a href="/">+00 92 1234 56789</a>
+                        </li>
+                        <li>
+                            <a href="/">info@travlog.com</a>
+                        </li>
+                        <li>
+                            <a href="/">205. R Street, New York</a>
+                        </li>
+                        <li>
+                            <a href="/">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

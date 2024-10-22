@@ -1,0 +1,79 @@
+.subscribe {
+    margin-top: 32px;
+
+    &__wrapper {
+        padding: 128px 64px;
+        border-radius: 32px;
+        background: rgba(250, 205, 73, 0.08);
+
+        @include phone() {
+            padding: 64px 32px;
+        }
+
+        & .title {
+            text-align: center;
+
+            & h2 {
+                font-size: 55px;
+                margin-top: 32px;
+                margin-bottom: 64px;
+
+                @include tablet() {
+                    font-size: 40px;
+                }
+                @include phone() {
+                    font-size: 32px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    & form {
+        width: 100%;
+        display: flex;
+        gap: 64px;
+
+        @include tablet() {
+            gap: 32px;
+        }
+
+        @include phone() {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        & input {
+            width: 100%;
+            border-radius: 32px;
+            background: #FFF;
+            padding: 32px;
+            @include textSpan($pColor);
+            letter-spacing: normal;
+            text-transform: none;
+            border: none;
+
+            @include phone() {
+                padding: 24px 32px;
+            }
+
+            &::placeholder {
+                @include textSpan($pColor);
+                letter-spacing: normal;
+                text-transform: none;
+            }
+        }
+
+        & button {
+            padding: 32px 64px;
+            border-radius: 32px;
+            background: #5D50C6;
+            border: none;
+            @include textSpan(#fff);
+            @include phone() {
+                padding: 24px 64px;
+            }
+        }
+    }
+}

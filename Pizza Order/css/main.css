@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.pizzaMenu {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #000;
+    padding: 25px;
+}
+
+.orderPiz {
+    font-family:sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#dough {
+    flex: 1;
+}
+
+.pizza_size {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pizza_size > label {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.on_pizza {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add_pizza {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#formBtn {
+    width: 50%;
+    border-radius: 5px;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.orderBtn {
+    padding-block: 50px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    align-items: start;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.order-modal {
+    max-width: 400px;
+    padding: 10px 20px;
+    border: 1px solid;
+}
+
+.order-modal h1 {
+    font-size: 24px;
+}
+
+.user__info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-total {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pizza__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+
+.order h2 span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+hr {
+    margin-block: 15px;
+}
+
+.pizza_size > input[name="size"] {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.card__price1 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    padding: 10px 0px 0px 20px;
+}
+
+.size__price1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.on__pizza1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.addpriceget1 {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[name="size"]:checked + label {
+    border-color: blue;
+    background-color: #27e771;
+    color: #000000;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+

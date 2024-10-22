@@ -1,0 +1,132 @@
+.footer {
+    margin-top: 250px;
+    height: 300px;
+    background-image: url('../images/Mask.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top, center;
+}
+
+.today {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.sign {
+    font-family: "Space Mono";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: white;
+    max-width: 400px;
+}
+
+.nav__elements2223{
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+.footer__navbar {
+
+    height: 100px;
+    background-color: #333A44;
+}
+
+.nav__list2 {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.list-item2 a {
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.mesenger {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 395px;
+}
+
+.download_btn {
+    display: flex;
+    gap: 18px;
+}
+
+.mees {
+    cursor: pointer;
+}
+
+.today a {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .today {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .sign {
+        text-align: center;
+    }
+
+    .mesenger  {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .sign {
+        max-width: 411px;
+        font-family: "Space Mono";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+
+    }
+
+    .footer__navbar {
+        height: 438px;
+
+    }
+
+    .nav__elements2223 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav__list2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mesenger {
+        margin: 0;
+    }
+
+    .btn__play {
+        width: 100px;
+    }
+
+    .appp {
+        width: 135px;
+    }
+
+    .playy {
+        width: 165px;
+    }
+}

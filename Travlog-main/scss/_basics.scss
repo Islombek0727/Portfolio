@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+.container {
+    max-width: 1184px;
+    margin: 0 auto;
+
+    @include tablet() {
+        & {
+            max-width: 896px;
+        }
+    }
+
+    @include phone() {
+        & {
+            max-width: 414px;
+            padding: 0 16px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}

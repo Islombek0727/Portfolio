@@ -1,0 +1,34 @@
+.courses{
+  padding: 0 20px;
+
+  .conteiner{
+
+    .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      h3{
+        color: var(--Gray-1, #333);
+        font-size: 32px;
+        font-weight: 600;
+        @include media(700px, 0){
+          font-size: 16px;
+        }
+      }
+      a{
+        color: var(--Gray-1, #333);
+        font-size: 24px;
+        font-weight: 400;
+        min-width: max-content;
+      }
+    }
+    .course__card{
+      display: flex;
+      gap: 32px;  
+      @include media(1250px, 0 ){
+        overflow: scroll;
+      }    
+    }
+  }
+}

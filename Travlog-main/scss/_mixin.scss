@@ -1,0 +1,61 @@
+// ! Media Queries
+@mixin tablet() {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+// ! Media Queries End of
+
+@mixin btn($bg: white, $color: $btnDarkColor, $textSize: 14px) {
+    color: $color;
+    font-size: $textSize;
+    font-weight: 700;
+    line-height: 120%;
+    border-radius: 100px;
+    background: $bg;
+    padding: 16px 32px;
+    @content;
+}
+
+@mixin heading($color: $TitleColor, $textSize: 44px) {
+    color: $color;
+    font-size: $textSize;
+    font-weight: 700;
+    line-height: 120%;
+    @content;
+}
+
+@mixin textSpan($color: $spanTextColor, $textSize: 23px) {
+    color: $color;
+    font-size: $textSize;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    @content;
+}
+
+@mixin textParagraph($textSize: $pSize) {
+    color: $pColor;
+    font-family: 'Inter', sans-serif;
+    font-size: $textSize;
+    font-weight: 400;
+    line-height: 160%;
+    @content;
+}
+
+@mixin boxFilterBlur($color: #FACD49, $size: 500px) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    opacity: 0.5;
+    background: $color;
+    filter: blur(203.00001525878906px);
+}

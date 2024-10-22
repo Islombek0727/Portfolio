@@ -1,0 +1,246 @@
+.subscribe__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__elem {
+    margin-top: 160px;
+    display: flex;
+}
+
+.subscribe__elem_img {
+    margin-top: 160px;
+    display: flex;
+  
+}
+
+.subscribe__elem__img {
+    margin-top: 160px;
+    display: flex;
+    gap: 300px;
+}
+
+.subscribe__elem233 {
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    // gap: 69px;
+}
+
+.subscribe__elem2 {
+    margin-top: 160px;
+    display: flex;
+    gap: 600px;
+} 
+
+.subs__elem33 {
+    margin-left: 100px;
+}
+
+
+.btn3 {
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    background-color: #FCB72B;
+    border: none;
+    padding: 14px 39px;
+    cursor: pointer;
+    margin-top: 40px;
+
+    &:hover {
+        background-color: #d8b673;
+    }
+}
+
+.easy {
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #495567;
+    max-width: 350px;
+}
+
+.easy__p {
+    font-family:" Lexend Deca";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #939CAA;
+    max-width: 370px;
+    margin-top: 24px;
+}
+
+
+.easy1 {
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.142857074737549px;
+    max-width: 700px;
+    color: #495567;
+}
+
+.img__girl33 {
+    display: flex;
+}
+
+.img__girl3 {
+   margin-left: 150px;
+   border-radius: 300px;
+}   
+
+.yumaloq {
+    
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 140px;
+}
+
+.str1 {
+    width: 560px;
+    position: absolute;
+    margin-top: 300px;
+}
+
+.str2 {
+    width: 500px;
+    margin-bottom: -250px;
+    position: absolute;
+    margin-left: -300px;
+}
+
+@media screen and (max-width:1024px) {
+    .subscribe__elem {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .subscribe__elem_img {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 150px;
+        gap: 64px;
+    }
+
+    .subscribe__elem__img {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .subs__elem3__k {
+        text-align: center;
+        margin-top: -250px;
+    }
+
+    .subs__elem3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .subs__elem33 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .easy1 {
+        max-width: 400px;
+    }
+
+    .subscribe__elem2 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+        margin-top: 100px;
+    }
+
+    .subs__elem323 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .subscribe__elem2 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .subscribe__elem233 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 150px;
+        align-items: center;
+    }
+
+    .img__girl3 {
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .girl {
+        width: 311px;
+    }
+
+    .str1 {
+        width: 350px;
+        margin-top: 200px;
+    }
+
+    .city{
+        width: 311px;
+    }
+
+    .img__girl3{
+        width: 311px;
+        margin-left: -30px;
+    }
+
+    .subs__elem33 {
+        margin: 0;
+    }
+
+    .subscribe__elem {
+        margin-top: 50px;
+    }
+
+    .subs__elem3 {
+        margin-top: 250px;
+    }
+
+    .subscribe__elem {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .subs__elem3{
+        margin: 0;
+    }
+
+    .yumaloq {
+        width: 311px;
+        margin: 0;
+        margin-top: 150px;
+    }
+}
