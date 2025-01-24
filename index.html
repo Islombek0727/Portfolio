@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>User Data Visualization</h1>
+    
+    <section id="progress-bars">
+        <h2>Progress Bars</h2>
+        <div class="progress-container">
+            <label for="progress1">Task 1:</label>
+            <div class="progress">
+                <div id="progress1" class="progress-bar" style="width: 70%;">70%</div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <label for="progress2">Task 2:</label>
+            <div class="progress">
+                <div id="progress2" class="progress-bar" style="width: 50%;">50%</div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <label for="progress3">Task 3:</label>
+            <div class="progress">
+                <div id="progress3" class="progress-bar" style="width: 30%;">30%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="charts">
+        <h2>Charts</h2>
+        <canvas id="userChart" width="400" height="200"></canvas>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
